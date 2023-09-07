@@ -1,0 +1,8 @@
+ion-button[color="success"] {
+    text-transform: initial;
+    font-size: 14px;
+}
+
+ion-content {
+    --background: var(--ion-color-success);
+}
