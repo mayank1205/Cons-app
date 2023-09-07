@@ -1,0 +1,7 @@
+{
+  "name": "cons-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
