@@ -10,46 +10,9 @@
 
 
 <ion-content>
-  <ion-card color="success">
-    <ion-card-header>
-      <ion-card-subtitle>Pushparatan Park</ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-item lines="none">
-        <ion-avatar>
-          <img src="https://wallpapercave.com/wp/wp2003539.jpg" />
-        </ion-avatar>
-        <ion-label>
-          <h3>Mayank Builders</h3>
-        </ion-label>
-      </ion-item>
-      <ion-item lines="none">
-        <ion-label>
-          <h3><ion-icon name="calendar-sharp"></ion-icon> Start date - End date</h3>
-        </ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-  <ion-card color="success">
-    <ion-card-header>
-      <ion-card-subtitle>Om Aangan</ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-item lines="none">
-        <ion-avatar>
-          <img src="https://wallpapercave.com/wp/wp2003566.jpg" />
-        </ion-avatar>
-        <ion-label>
-          <h3>Abhiyank Associates</h3>
-        </ion-label>
-      </ion-item>
-      <ion-item lines="none">
-        <ion-label>
-          <h3><ion-icon name="calendar-sharp"></ion-icon> Start date - End date</h3>
-        </ion-label>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
+
+  <app-site-card [company]="'Mayank Builders'" [site]="'Pushparatan Park'" [image]="'https://wallpapercave.com/wp/wp2003539.jpg'" [startdate]="'10/01/2023'" [enddate]="'09/10/2023'"></app-site-card>
+  <app-site-card [company]="'Abhiyank Associates'" [site]="'Om Aangan'" [image]="'https://wallpapercave.com/wp/wp2003566.jpg'" [startdate]="'10/01/2023'" [enddate]="'09/10/2023'"></app-site-card>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button color="success">
       <ion-icon size="large" name="add"></ion-icon>
