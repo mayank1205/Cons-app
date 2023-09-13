@@ -25,7 +25,9 @@
           </ion-item>
           <ion-label color="danger" *ngIf="apiError!==''">{{apiError}}</ion-label>
           <ion-label color="danger" *ngIf="form.get('password')?.touched && form.get('password')?.errors?.['required']">Password is required</ion-label>
-          <ion-button color="dark" fill="clear" size="full" [disabled]="!form.get('mobile')?.valid">Forgot email/password</ion-button>
+          <ion-button color="dark" fill="clear" size="full" [disabled]="!form.get('mobile')?.valid" (click)="forgotEmailPassword()">
+            Forgot email/password
+          </ion-button>
           <ion-button size="block" shape="round" color="success" size="full" [disabled]="!form.valid" (click)="login()">Login</ion-button>
           <ion-button color="success" fill="clear" size="full" routerLink="/register">Register</ion-button>
         </ion-card-content>
